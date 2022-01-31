@@ -21,11 +21,12 @@ Beware this tool writes directly to the BCM283x GPIO registers, ignoring anythin
 {{{ git_dir_setup_macro }}}
 
 %build
-./configure --prefix=%{buildroot}
+./configure --prefix=%{buildroot}/%{_prefix}
 make
 
 %install
 make install
+
 
 %files
 %license LICENSE
