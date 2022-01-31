@@ -3,7 +3,7 @@ Version:    {{{ git_dir_version }}}
 Release:    %{?dist}
 Summary:    Tool to help debug / hack at the BCM283x GPIO
 
-BuildRequires:  automake
+BuildRequires:  automake gcc
 
 License:    BSD-3
 URL:        https://github.com/RPi-Distro/raspi-gpio
