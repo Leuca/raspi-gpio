@@ -1,6 +1,6 @@
 Name:       {{{ git_dir_name }}}
 Version:    {{{ git_dir_version }}}
-Release:    %{?dist}
+Release:    1%{?dist}
 Summary:    Tool to help debug / hack at the BCM283x GPIO
 
 BuildRequires:  automake gcc
@@ -21,11 +21,11 @@ Beware this tool writes directly to the BCM283x GPIO registers, ignoring anythin
 {{{ git_dir_setup_macro }}}
 
 %build
-./configure --prefix=%{buildroot}/%{_prefix}
-make
+%configure
+%make_build
 
 %install
-make install
+%make_install
 
 
 %files
